@@ -1,0 +1,386 @@
+
+:root {
+    --primary-color: #5B8C85; 
+    --accent-color: #F7A388; 
+    --light-bg: #f9f9f9;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.primary-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: 2px solid var(--accent-color);
+}
+
+.primary-btn:hover {
+    background-color: #e5947a; /* Slightly darker accent */
+}
+
+.secondary-btn {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 8px 20px;
+}
+
+
+.header {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    padding: 15px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+/* .nav-menu:hover{
+   color: rgb(40, 150, 150);
+    background-color: #5B8C85; 
+} */
+.nav-menu ul {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 15px;
+
+}
+.nav-menu a:hover{
+    
+    color: rgb(30, 238, 238);
+    background-color: #3c6e67;
+}
+
+.nav-icons a {
+    margin-left: 15px;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+
+.hero {
+    background-color: var(--light-bg);
+    padding: 60px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    line-height: 1.1;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.hero-image-placeholder {
+    flex: 1;
+    min-height: 400px;
+    background-color: #ddd; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    color: #666;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.value-prop {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.value-prop h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.prop-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.prop-item {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.prop-item h3 {
+    color: var(--accent-color);
+}
+
+
+.categories {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+}
+
+.categories h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-tile {
+    min-height: 250px;
+    background-color: #ccc; 
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-tile h3 {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+
+.tile-denim { background-color: #667e91; }
+.tile-knits { background-color: #a37c68; }
+.tile-designer { background-color: #444; }
+.tile-accessories { background-color: #9c9c61; }
+
+
+
+.testimonials {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.testimonial-quote {
+    font-size: 1.4em;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.4;
+    color: #555;
+}
+
+.testimonial-quote footer {
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 15px;
+    color: var(--accent-color);
+}
+
+
+.cta-signup {
+    padding: 50px 0;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.cta-signup h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.cta-signup p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.signup-form input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 1em;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    font-size: 0.9em;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.footer-col h4 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-col ul {
+    line-height: 2;
+}
+
+.footer-col a {
+    color: #ccc;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.social-links p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #888;
+    font-size: 0.8em;
+}
+
+
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+    .hero-image-placeholder {
+        min-height: 300px;
+    }
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-col {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-menu ul {
+        gap: 15px;
+        margin: 10px 0;
+    }
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+    .prop-grid {
+        flex-direction: column;
+    }
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+    .signup-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .signup-form input {
+        width: 100%;
+        max-width: 300px;
+    }
+}
